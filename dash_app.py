@@ -121,11 +121,7 @@ fig.update_layout(
 fig.show()
 
 
-app = Dash(
-    __name__,
-    requests_pathname_prefix="/dashapp/",
-    assets_folder="assets",  # if you have static files
-)
+app = Dash(__name__, assets_folder="assets")
 server = app.server  # the Flask “app” for Gunicorn
 
 app.layout = html.Div([html.H1("Chargeboxes by Location"), dcc.Graph(figure=fig)])
