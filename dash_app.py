@@ -21,6 +21,8 @@ from plotly import express as px
 from dash import Dash, html, dcc
 
 
+# load the data by
+
 merged_df = pd.read_parquet("chargebox_metrics_april.csv")
 
 ##### LOCATION STATISTICS #####
