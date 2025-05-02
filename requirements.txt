@@ -9,3 +9,4 @@ plotly
 tensorflow 
 dash 
 plotly
+Gunicorn
