@@ -39,7 +39,7 @@ jobs:
           zip -r release.zip \
             dash_app.py \
             requirements.txt \
-            chargebox_metrics_april.csv \
+            chargebox_metrics_april.parquet \
             assets/ \
             Procfile \
             --exclude=venv/\* .git/\* \
@@ -86,5 +86,6 @@ jobs:
           app-name: 'APMASTERTHESIS'
           slot-name: 'Production'
           package: 'release.zip'
+          startup_command: 'gunicorn dash_app:server --bind=0.0.0.0:8000'
 
           
