@@ -21,7 +21,7 @@ from plotly import express as px
 from dash import Dash, html, dcc
 
 
-merged = pd.read_parquet("chargebox_metrics_april.csv")
+merged_df = pd.read_parquet("chargebox_metrics_april.csv")
 
 ##### LOCATION STATISTICS #####
 # group data by location
