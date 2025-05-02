@@ -86,6 +86,5 @@ jobs:
           app-name: 'APMASTERTHESIS'
           slot-name: 'Production'
           package: 'release.zip'
-          startup_command: 'gunicorn dash_app:server --bind=0.0.0.0:8000'
 
           
